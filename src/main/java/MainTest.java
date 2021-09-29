@@ -15,4 +15,17 @@ public class MainTest {
         assertEquals(2, num);
     }
 
+    @Test
+    public void testReturnGreeting(){
+        assertEquals("Well, hello!", Main.returnGreeting("hello"));
+        assertEquals("Well, howdy!", Main.returnGreeting("howdy"));
+        assertEquals("Well, good day!", Main.returnGreeting("good day"));
+    }
+
+    @Test
+    public void testAdd(){
+        assertEquals(4, Main.add(2, 2));
+        assertEquals(5, Main.add(2, 3));
+
+    }
 }

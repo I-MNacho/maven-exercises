@@ -23,7 +23,7 @@ public class MyFirstfTest {
     }
 
     @Test
-    public void sameArray(){
+    public void isNumbersArray(){
         int[] numbers = {1, 2, 3};
         int[] otherNumbers = new int[3];
         otherNumbers[0] = 1;
@@ -40,9 +40,6 @@ public class MyFirstfTest {
         String language = "PHP";
         language.contains("H"); // use assertTrue for this statement
         language.contains("J"); // use assertFalse for this statement
-
-//        assertTrue("H", true);
-//        assertFalse("J", false);
 
         assertTrue(language.contains("H"));
         assertFalse(language.contains("J"));
