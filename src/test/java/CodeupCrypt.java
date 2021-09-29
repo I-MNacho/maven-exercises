@@ -28,4 +28,8 @@ public class CodeupCrypt {
         }
         return output;
     }
+
+    public static boolean checkPassword(String hashed, String original) {
+        return hashed.equals(hashPassword(original));
+    }
 }
